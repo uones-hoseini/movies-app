@@ -4,6 +4,7 @@ import "./App.css"
 
 //component
 import MovieList from "./components/MovieList"
+import MovieListHeading from "./components/MovieListHeading"
 
 function App() {
   const [movies, setMovies] = useState([])
@@ -22,6 +23,9 @@ function App() {
 
   return (
     <div className="container-fluid  movie-app">
+      <div className="row">
+        <MovieListHeading heading="Movies"/>
+      </div>
       <div className="row">
         <MovieList movies={movies} />
       </div>
